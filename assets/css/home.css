@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 .main-box {
-    background-image: url("assets/img/3.jpg");
+    background-image: url("/mywebsite/assets/img/3.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     align-items: center;
