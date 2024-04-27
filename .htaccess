@@ -1,0 +1,69 @@
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.css [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.css -f
+RewriteRule ^ %{REQUEST_URI}.css [NC,L]
+
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.png [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.png -f
+RewriteRule ^ %{REQUEST_URI}.png [NC,L]
+
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.jpg [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.jpg -f
+RewriteRule ^ %{REQUEST_URI}.jpg [NC,L]
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.jpeg [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.jpeg -f
+RewriteRule ^ %{REQUEST_URI}.jpeg [NC,L]
+
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.svg [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.svg -f
+RewriteRule ^ %{REQUEST_URI}.svg [NC,L]
+
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.py [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.py -f
+RewriteRule ^ %{REQUEST_URI}.py [NC,L]
+
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.ico [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.ico -f
+RewriteRule ^ %{REQUEST_URI}.ico [NC,L]
